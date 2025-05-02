@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Type Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&family=Monoton&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body, html {
+            scroll-behavior: smooth;
+            /* font-family: 'Roboto', sans-serif; */
+        }
+        
+        section {
+            padding: 100px 20px;
+            color: #fff;
+            /* text-align: center; */
+            position: relative;
+            height: 100vh;
+        }
+
+        .font-section {
+            background-color: #000;
+        }
+        
+        .font-section-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* full screen height */
+            padding: 40px 20px;
+        }
+
+        .font-section-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            min-height: 100vh; /* full screen height */
+            padding: 40px 20px;
+        }
+        
+        .font-section h1 {
+            font-size: 6rem;
+        }
+        
+        .font-section h2 {
+            font-size: 3rem;
+            /* margin: 0 auto; */
+            text-align: left;
+        }
+        
+        .font-section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .lobster {
+            font-family: 'Lobster', cursive;
+        }
+        
+        .monoton {
+            font-family: 'Monoton', cursive;
+        }
+        
+        .abril {
+            font-family: 'Abril Fatface', cursive;
+        }
+        
+        
+        /* Alternating background images */
+        .bg1 { background-image: url('flower.jpg'); }
+        .bg2 { background-image: url('https://source.unsplash.com/1600x900/?books'); }
+        .bg3 { background-image: url('https://source.unsplash.com/1600x900/?abstract'); }
+        
+        /* Overlay for readability */
+        .overlay::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        
+        .overlay > * {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .font-container {
+            display: block;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        /* Flex when screen width is 768px and above */
+        @media (min-width: 768px) {
+            .font-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 40px;
+                text-align: left;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            
+            .font-text, .font-sample {
+                flex: 1;
+            }
+            
+            .sample-text {
+                font-size: 4rem;
+                display: block;
+                color: #eee;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="font-section font-section-header">
+        <p class="abril" style="font-size: 5vw;">Typography is Style</p>
+        <p>Just like fashion, fonts speak before you do.</p>
+        <p style="font-size: 14px;">This showcase is a runway of letterforms—each with its own voice, attitude, and energy. From bold statements to soft whispers, explore how typography transforms mood and message, turning words into wearable art. Inspired by the elegance, contrast, and charisma of high fashion, let each font make its entrance. Strut through the scroll.</p>
+    </section>
+    
+    <!-- <section class="font-section">
+        <div class="font-container">
+            <div class="font-text">
+                <h2>Typography is Style</h2>
+                <p>Just like fashion, fonts speak before you do. <p>This showcase is a runway of letterforms—each with its own voice, attitude, and energy. From bold statements to soft whispers, explore how typography transforms mood and message, turning words into wearable art. Inspired by the elegance, contrast, and charisma of high fashion, let each font make its entrance. Strut through the scroll.</p></p>
+            </div>
+            <div class="font-sample">
+                <span class="sample-text">Aa Bb Cc</span>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="font-section font-section-content">
+        <h2>Times New Roman</h2>
+        <p>A classic serif font that evokes elegance and a sense of literary charm. Great for headings and sophisticated designs.</p>
+    </section>
+    
+    <section class="font-section playfair">
+        
+        
+    </section>
+    
+    <section class="parallax bg1 overlay">
+        <h2>Parallax Visual</h2>
+        <p>This background gives a dynamic feel to your site as users scroll through.</p>
+    </section>
+    
+    <section class="font-section lobster">
+        <h2>Lobster</h2>
+        <p>This font brings a friendly and playful tone, perfect for creative headings and branding.</p>
+    </section>
+    
+    <section class="parallax bg2 overlay">
+        <h2>Typography in Motion</h2>
+        <p>Typography isn’t just text—it’s a visual element that enhances the story.</p>
+    </section>
+    
+    <section class="font-section monoton">
+        <h2>Monoton</h2>
+        <p>A retro-futuristic typeface ideal for digital, arcade, or neon-style branding.</p>
+    </section>
+    
+    <section class="parallax bg3 overlay">
+        <h2>Design Meets Font</h2>
+        <p>Pairing font and visuals can elevate a simple layout into an experience.</p>
+    </section>
+    
+</body>
+</html>

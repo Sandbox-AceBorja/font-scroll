@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Font Type Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cantata+One&family=Darumadrop+One&family=Libre+Baskerville&family=Montserrat&family=Noto+Sans+KR&family=Open+Sans&family=Playfair+Display&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      padding: 100px 20px;
+      position: relative;
+      height: 100vh;
+    }
+
+    .bg-black { background-color: #000; color: #fff; }
+    .bg-white { background-color: #fff; color: #000; }
+    .bg-dark-red { background-color: #ae1818; color: #fff; }
+    .bg-charcoal { background-color: #3b3e36; color: #fff; }
+    .bg-beige { background-color: #f0e6d2; }
+    .bg-coral-pink { background-color: #2F4F4F; color: #fff; }
+    .bg-mustard { background-color: #DDAA00; color: #333; }
+
+    .text-black { color: #000; }
+    .text-white { color: #fff; }
+
+    .font-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .font-section-header, .font-section-content {
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .font-section h1 {
+      font-size: 7vh;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .font-section h2 {
+      font-size: 5vh;
+      max-width: 800px;
+      text-align: left;
+      margin: 0 auto;
+    }
+
+    .font-section p {
+      font-size: 2vh;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .parallax {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .overlay::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .overlay > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .font-container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .font-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        text-align: left;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .font-text, .font-sample {
+        flex: 1;
+      }
+
+      .sample-text {
+        font-size: 4rem;
+        color: #eee;
+      }
+    }
+
+    /* Font families */
+    .abril        { font-family: 'Abril Fatface', serif; }
+    .baskerville  { font-family: 'Libre Baskerville', serif; }
+    .cantata      { font-family: 'Cantata One', serif; }
+    .darumadrop   { font-family: 'Darumadrop One', sans-serif; }
+    .montserrat   { font-family: 'Montserrat', sans-serif; }
+    .notosanskr   { font-family: 'Noto Sans KR', sans-serif; }
+    .opensans     { font-family: 'Open Sans', sans-serif; }
+    .playfair     { font-family: 'Playfair Display', serif; }
+    .raleway      { font-family: 'Raleway', sans-serif; }
+
+    /* Background images */
+    .bg1 { background-image: url('rome.jpg'); }
+    .bg2 { background-image: url('tree.jpg'); }
+    .bg3 { background-image: url('city.jpg'); }
+    .bg4 { background-image: url('sunset.jpg'); }
+
+    footer {
+        background-color: #333;
+        color: #eaeaea; 
+        padding: 10px;
+        text-align: center; 
+    }
+
+    footer a {
+        color: inherit;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="font-section font-section-header abril">
+    <p style="font-size: 80px;">Beautiful Web Type</p>
+    <p class="montserrat" style="font-size: 30px;">Where every font finds its purpose</p>
+    <p class="montserrat" style="font-size: 14px;">
+      This showcase is a curated gallery of typefaces—each chosen to highlight its unique character and ideal use cases.
+      From expressive display fonts to highly readable serifs, explore how typography shapes communication and enhances digital design.
+      Discover the personality and power behind every letterform, and see how the right font can elevate any message.
+    </p>
+  </section>
+
+  <section class="font-section opensans bg-beige">
+    <h1>Open Sans</h1>
+    <p>Open Sans is a clean, modern, and highly legible sans-serif font designed by Steve Matteson. It’s versatile and works perfectly for both body text and headlines. With its open letterforms and neutral, friendly style, Open Sans is ideal for digital and print applications, ensuring clarity and readability across devices and screen sizes.</p>
+  </section>
+
+  <section class="parallax font-section overlay text-white bg2 baskerville">
+    <h1>Libre Baskerville</h1>
+    <p>Libre Baskerville is a classic serif font that blends elegance with readability, making it ideal for long-form content like articles and literary works. Its refined style works well for both headings and body text, offering a clear and polished look, especially on screens.</p>
+  </section>
+
+  <section class="font-section cantata bg-charcoal">
+    <h1 style="text-align: left;">Cantata</h1>
+    <p>A graceful and expressive typeface inspired by classical music and timeless elegance. With flowing curves and refined details, Cantata brings harmony to headlines, invitations, and sophisticated branding.</p>
+  </section>
+
+  <section class="parallax font-section overlay bg1 text-white raleway">
+    <h1>Raleway</h1>
+    <p>Raleway is an elegant, modern sans-serif font family designed by Matt McInerney. Known for its clean lines and sophisticated style, it adds a sense of refinement and professionalism to any design. Whether used for headers or body text, Raleway provides clarity and a sleek, contemporary appearance, making it perfect for websites, branding, and corporate designs.</p>
+  </section>
+
+  <section class="font-section darumadrop bg-mustard">
+    <h1>Darumadrop One</h1>
+    <p>Darumadrop One is a whimsical, bold, and distinctive typeface with a playful and modern feel. With its rounded letterforms and unique charm, this font is perfect for adding character to headers, titles, and any design that requires a touch of fun and creativity. The design of Darumadrop One captures a sense of friendliness and lightheartedness, making it a great choice for projects focused on youth, entertainment, or anything that needs a bold, yet approachable typeface.</p>
+  </section>
+
+  <section class="parallax font-section overlay bg4 notosanskr text-white">
+    <h1>Noto Sans KR</h1>
+    <p>구글에서 디자인한 Noto Sans KR은 다양한 언어와 문자 시스템에서 균형 잡힌 시각적 표현을 제공하는 모던한 산세리프 글꼴입니다. 한국어 웹사이트와 앱에서 탁월한 가독성을 자랑하며, 깔끔한 선과 유연한 디자인으로 다채로운 환경에 적합합니다.</p>
+  </section>
+
+  <section class="font-section playfair bg-coral-pink text-white">
+    <h1>Playfair</h1>
+    <p>Playfair Display is a sophisticated and elegant serif typeface that blends traditional charm with modern flair. Inspired by the transitional style of type from the 18th century — a time when ink pens were being replaced by pointed steel pens — this font is ideal for editorial headlines, branding, and elegant typography projects.</p>
+  </section>
+
+  <section class="parallax font-section overlay bg3 montserrat text-white">
+    <h1>Montserrat</h1>
+    <p>Montserrat is a modern sans-serif typeface that brings a stylish, geometric look with a touch of urban flair. Inspired by the signage of Buenos Aires, it combines clean lines and a friendly yet professional aesthetic, making it ideal for headings, branding, and web interfaces. Whether for sleek minimalism or bold statements, Montserrat adds sophistication to any design.</p>
+  </section>
+
+</body>
+<footer>
+    <p class="montserrat"><a href="https://github.com/Sandbox-AceBorja">&copy; Ace Borja 2025</a></p>
+</footer>
+</html>
